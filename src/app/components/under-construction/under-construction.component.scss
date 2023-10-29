@@ -1,0 +1,17 @@
+@import '../../../styles/styles.scss';
+
+.construction-band {
+    // color: map-get($theme-dark, text);
+    color: #FF3131;
+    width: 100%;
+    height: 50px;
+    @include flex(center, center, column);
+    background: repeating-linear-gradient(
+        -45deg,
+        black 0,
+        black 15%,
+        yellow 20%,
+        yellow 30%
+    );
+    position: absolute;
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/styles.scss';
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    color: map-get($map: $theme-dark, $key: text);
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  .navbar-list {
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+
+    .navbar-item {
+      .navbar-link {
+        text-decoration: none;
+        color: map-get($map: $theme-dark, $key: text);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
