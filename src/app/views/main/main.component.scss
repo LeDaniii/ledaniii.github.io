@@ -5,4 +5,38 @@ main {
   height: 100%;
   color: white;
   @include gradient-background;
+  @include flex(center, center, column);
+}
+
+.hexagon-wrapper {
+  @include flex(center, center, row);
+  gap: 5rem;
+}
+
+.hexagon {
+  width: 400px;
+  height: 400px;
+  @include translucent-background;
+  background-image: url(../../../assets/images/main.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  transition: transform 0.3s ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+   transform: scale(1.1);
+  }
+}
+
+.below-wrapper {
+  transform: translateY(-6rem);
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
 }
