@@ -1,4 +1,5 @@
 <main>
+  <div class="greetings">
   <h1>
     <span class="letter">H</span>
     <span class="letter">e</span>
@@ -15,17 +16,82 @@
     <span class="letter">u</span>
     <span class="letter">p</span>
     <span class="letter">!</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">|</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">T</span>
+    <span class="letter">h</span>
+    <span class="letter">i</span>
+    <span class="letter">s</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">P</span>
+    <span class="letter">a</span>
+    <span class="letter">g</span>
+    <span class="letter">e</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">i</span>
+    <span class="letter">s</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">s</span>
+    <span class="letter">t</span>
+    <span class="letter">i</span>
+    <span class="letter">l</span>
+    <span class="letter">l</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">u</span>
+    <span class="letter">n</span>
+    <span class="letter">d</span>
+    <span class="letter">e</span>
+    <span class="letter">r</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">c</span>
+    <span class="letter">o</span>
+    <span class="letter">n</span>
+    <span class="letter">s</span>
+    <span class="letter">t</span>
+    <span class="letter">r</span>
+    <span class="letter">u</span>
+    <span class="letter">c</span>
+    <span class="letter">t</span>
+    <span class="letter">i</span>
+    <span class="letter">o</span>
+    <span class="letter">n</span>
+    <span class="letter">!</span>
   </h1>
+  </div>
   <div class="hexagon-wrapper">
-    <div class="hexagon"></div>
-    <div class="hexagon"></div>
-    <div class="hexagon"></div>
-    <div class="hexagon"></div>
+    <div class="hexagon hexagon-1" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+
+
+    </div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
   </div>
   <div class="hexagon-wrapper below-wrapper">
-    <div class="hexagon"></div>
-    <div class="hexagon"></div>
-    <div class="hexagon"></div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
+    <div class="hexagon" (click)="animateCircle($event)">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
   </div>
 </main>
 
