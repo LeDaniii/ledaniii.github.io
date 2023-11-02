@@ -60,21 +60,19 @@
   </h1>
   </div>
   <div class="hexagon-wrapper">
-    <div class="hexagon hexagon-1" (click)="animateCircle($event)">
-      <!-- Animated Circle -->
-      <div class="circle"></div>
-
-
-    </div>
-    <div class="hexagon hexagon-2" (click)="animateCircle($event)">
+    <div class="hexagon hexagon-1" (click)="animateCircle($event)" [routerLink]="['/programming']">
       <!-- Animated Circle -->
       <div class="circle"></div>
     </div>
-    <div class="hexagon hexagon-3" (click)="animateCircle($event)">
+    <div class="hexagon hexagon-2" (click)="animateCircle($event)" [routerLink]="['/automation']">
       <!-- Animated Circle -->
       <div class="circle"></div>
     </div>
-    <div class="hexagon hexagon-4" (click)="animateCircle($event)">
+    <div class="hexagon hexagon-3" (click)="animateCircle($event)" [routerLink]="['/iot']">
+      <!-- Animated Circle -->
+      <div class="circle"></div>
+    </div>
+    <div class="hexagon hexagon-4" (click)="animateCircle($event)" [routerLink]="['/hobbies']">
       <!-- Animated Circle -->
       <div class="circle"></div>
     </div>
