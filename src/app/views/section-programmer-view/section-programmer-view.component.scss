@@ -1,0 +1,98 @@
+@import '../../../styles/styles.scss';
+
+.section-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  @include gradient-background;
+  @include flex(space-between, center, row);
+  gap: 1rem;
+}
+
+nav {
+  color: map-get($map: $theme-dark, $key: text);
+  height: 100%;
+  flex-grow: 3;
+  @include frostet-glass;
+  .sorting-wrapper {
+    width: 100%;
+    height: 10%;
+    @include flex(space-between, center, row);
+  }
+}
+
+.sorting-button {
+    &::before {
+    content: '';
+    display: block;
+    padding-top: 100%; // 1:1 Aspect Ratio
+  }
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.js {
+  background-image: url(../../../assets/svgs/js.svg);
+}
+
+.ts {
+  background-image: url(../../../assets/svgs/ts.svg);
+}
+
+.csharp {
+  background-image: url(../../../assets/svgs/csharp.svg);
+}
+
+.python {
+  background-image: url(../../../assets/svgs/python.svg);
+}
+
+.js-background {
+  width: 100%;
+  @include js-background;
+}
+
+.ts-background {
+  width: 100%;
+  @include ts-background;
+}
+
+.csharp-background {
+  width: 100%;
+  @include csharp-background;
+}
+
+.python-background {
+  width: 100%;
+  @include python-background;
+}
+
+main {
+  color: map-get($map: $theme-dark, $key: text);
+  height: 100%;
+  flex-grow: 16;
+  overflow: hidden;
+  @include frostet-glass;
+
+  .main-header {
+    width: 100%;
+    height: 12%;
+    @include flex(space-between, center, row);
+    border-radius: 1rem 1rem 0 0;
+
+    .header-language-icon {
+      height: auto;
+      width: 10%;
+      max-height: 100%;
+      aspect-ratio: 1 / 1;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+

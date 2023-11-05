@@ -1,1 +1,16 @@
-<p>section-programmer-view works!</p>
+<div class="section-wrapper">
+  <nav class="side-nav">
+    <div class="sorting-wrapper">
+      <div class="sorting-button js" (click)="chooseLanguage('js')"></div>
+      <div class="sorting-button ts" (click)="chooseLanguage('ts')"></div>
+      <div class="sorting-button csharp" (click)="chooseLanguage('csharp')"></div>
+      <div class="sorting-button python" (click)="chooseLanguage('python')"></div>
+    </div>
+  </nav>
+  <main class="main-content">
+    <div class="main-header" [ngClass]="mainHeaderClass">
+      <div class="header-language-icon js" [ngClass]="headerIconClass"></div>
+    </div>
+    <h1>This is some Content</h1>
+  </main>
+</div>
