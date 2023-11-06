@@ -19,6 +19,23 @@ nav {
     height: 10%;
     @include flex(space-between, center, row);
   }
+  .nav-content {
+    padding: 1rem;
+    margin-top: 1rem;
+    @include flex(space-around, center, column);
+    width: 100%;
+  }
+  .nav-content-button {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    @include flex(space-between, center, row);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    &:hover {
+      background: rgba(193, 175, 175, 0.1);
+    }
+  }
 }
 
 .sorting-button {
@@ -95,4 +112,5 @@ main {
     }
   }
 }
+
 
